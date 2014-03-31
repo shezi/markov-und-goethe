@@ -5,12 +5,24 @@ Dieses Repository enthält den Code, der für den Vortrag über Markovketten am 
 
 *Nicht* mitgeliefert sind die Literaturquellen für die Erzeugung neuer Goethe-Zitate. Diese sind auf Projekt Gutenberg erhältlich.
 
+## Grundlagen
+
+Was hier gemacht wird, ist mittels einer Markovkette Text erzeugt. Die Markovkette hat als Zustände dabei Buchstabenkombinationen. Die Übergänge zwischen Kombinationen entsprechen den relativen Vorkommen in einem Eingabetext.
+
+Um eine Ausgabe zu erzeugen wird zuerst ein `START_MARKER` eingefügt. Ausgehend von diesem werden die Buchstabenkombinationen durchlaufen, bis die Kette an einem `END_MARKER` ankommt.
+
+
 ## Benutzung
 
 Alle Funktionen sind in `markov.py` enthalten. Dort einfach nachlesen.
 
 Wenn nur neuer Text erstellt werden soll, müssen die literarischen Inputs in `goethe.py` eingetragen werden und die Datei dann ausgeführt werden.
 
+
+
+## Übungsaufgabe
+
+Lustige Effekte ergeben sich auch, wenn man nicht Text auf buchstabenbasis erzeugt, sondern Sätze aus Wort-Kombinationen. Die Zustandsmenge der Markovkette sind dann n-fache Kombinationen von Wörtern. Dafür sollte allerdings eine große Eingabemenge vorhanden sein. Siehe auch [Wikipedia über Markovketten](https://en.wikipedia.org/wiki/Markov_chain#Markov_text_generators).
 
 
 # License information
